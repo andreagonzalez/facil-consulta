@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding:0;}
+html,body{ margin: 0; padding:0;} 
+body{margin:0px;padding:0px;background:#F2F2F2;font-family: 'Signika';font-size: 22px;}
+h1,h2,h3,h4,h5,h6{ color:#004768;font-weight: bold; }
+.fundoPrimario{background:#0094CF;}
+.fundoSecundario{background:#004768;}
+.fundoAccent{background: #737373;}
+.textoPrimario{background:#0094CF;}
+.textoSecundario{background:#004768;}
+.textoAccent{background: #737373;}
+
+.centralizar{width:80%;margin:0 auto;display: table;}
+.centro{margin:0 auto;text-align: center;}
+.center{margin:0 auto;text-align: center;}
+.texto-esquerda{width:100%;margin:0 auto;text-align:left}
+.texto-centro{text-align:center}
+.texto-direita{width:100%;margin:0 auto;text-align:right}
+.texto-justificado{width:100%;margin:0 auto;text-align:justify}
+
+.alert-success{color:green}
+.alert-warning{color:orangered}
+.alert-danger{ color:red;}
+/* FORM */
+.botaoCadastro{
+  margin-top:45px;
+  border-radius: 5px ;
+  padding:20px 65px;
+  border:0px;
+  color:white;
+  font-size: 1.1em;
+}
+.botaoLink{
+  float: right;
+  border-radius: 5px ;
+  padding:20px 65px;
+  font-size: 1.1em;
+  color:white;
+  text-decoration: none;
+}
+
+.form-peq {width:50px; }
+.form-med {width:150px; }
+.form-grd {width:350px; }
+.form-post {width:550px;height: 75px; }
+input[type='text'],textarea{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding:5px;
+    resize: none;
+
+}
+.form-select{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding:5px;
+}
+
+@media (min-width: 1024px) { 
+    .centralizar{width:1024px;}
+}
+@media (max-width: 1023px) { 
+    .centralizar{width:90%;}
+}
+
+#menuSidebar{
+  list-style:none;
+  border:1px solid #c0c0c0;
+  float:left;
+}
+
+#menuSidebar li{
+  position:relative;
+  float:left;
+  border-right:1px solid #c0c0c0;
+  list-style: none;
+}
+
+#menuSidebar li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+#menuSidebar li a:hover{
+  background:#333;
+  color:#fff;
+  -moz-box-shadow:0 3px 10px 0 #CCC;
+  -webkit-box-shadow:0 3px 10px 0 #ccc;
+  text-shadow:0px 0px 5px #fff;
+}
+
+#menuSidebar li  ul{
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:#fff;
+  display:none;
+}
+
+#menuSidebar li:hover ul, .menu li.over ul{display:block;}
+#menuSidebar li ul li{
+  border:1px solid #c0c0c0;
+  display:block;
+  width:150px;
+}   
+
+.tabelaGrid{ border-collapse: collapse;font-size:.8em ;width:100%;}
+.tabelaGrid tr th{ background: #0094CF; color:white;padding:2px 5px}
+.tabelaGrid tbody tr:nth-child(even) {background: #CCC}
+.tabelaGrid tbody tr:nth-child(odd) {background: #EEE}
+.tabelaGrid tr td a i.glyphicon{padding:2px 4px}
+
+.tabelaForm{ border-collapse: collapse;width:95%;}
+.tabelaForm tr th{text-align: right; padding:5px 0}
+.tabelaForm tr td{padding:5px }
+.tabelaForm tr td label{ display:table-caption;color: #004768;width: 95%;text-align:left; }
+.tabelaForm tr td input[type='text']{ width:100%;padding:10px 2px ;}
+
+.tabelaAgendaHorarios{  border-collapse: collapse;width:95%; font-size:.8em}
+.tabelaAgendaHorarios tr td{ border-bottom:1px solid #ccc ;padding:3px 1px}
+.tabelaAgendaHorarios tr td:nth-child(1){ text-align:left; }
+.tabelaAgendaHorarios tr td:nth-child(2) a{ text-align:right; color:red}
+
+.tabelaMedicosNomes{border-collapse: collapse;width:95%; font-size:.8em}
+/* .tabelaMedicosNomes tr td{ color: #004768;text-align:left;width:70%} */
+.tabelaMedicosNomes tr td:nth-child(1){ color: #004768;text-align:left;width:70%}
+a.botaoMedicosAcoes{
+  border:1px solid #0094CF;
+  color:#0094CF;
+  font-size:.7em;
+  float:right;
+  margin-left:15px;
+  text-decoration: none;
+  padding:2px 5px;
+  border-radius:5px;
+}
+.tabelaMedicosHorarios{ border-collapse: collapse;width:95%; font-size:.8em;margin-top:25px;}
+.tabelaMedicosHorarios tr td { width:25% ;  text-align:center !important; }
+
+/* div.botaoMedicosHorarios{ margin: 0 auto;} */
+.botaoMedicosHorarios{
+  border-radius:5px;
+  background:#0094CF;
+  color:white;
+  padding:3px 0;
+  font-size:.7em;
+  width:80%;
+  margin:10px ;
+}

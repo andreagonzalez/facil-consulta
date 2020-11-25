@@ -1,0 +1,6 @@
+echo ---> (print e printf) imprimir e para pular de linha usa tag <br> i
+para concatenar é possível escrever tudo dentro das aspas duplas
+= ---> atribuição
+$ ---> para que o PHP saiba que é uma variável (sem declaração, existe coerção)
+
+
